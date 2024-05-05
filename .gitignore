@@ -59,8 +59,9 @@ node_modules/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
+# Yarn Integrity files
 .yarn-integrity
 
 # dotenv environment variables file
-functions/.env
+#*.env
+
