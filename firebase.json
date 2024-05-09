@@ -11,5 +11,13 @@
         "*.local"
       ]
     }
-  ]
+  ],
+  "hosting": {
+    "rewrites": [
+      {
+        "source": "/doc/**",
+        "function": "app"
+      }
+    ]
+  }
 }
