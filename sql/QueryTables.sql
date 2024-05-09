@@ -562,17 +562,17 @@ BEGIN
             SELECT 
                 client_info.ID [ClientID], 
                 client_info.FirstName, 
-                client_info.LastName, 
-                (
-                    SELECT [Type]
-                    FROM rol_type
-                    WHERE rol_type.ID = client_info.RolTypeID
-                ) AS [RolType],
+                client_info.LastName,
                 (
                     SELECT [ID]
                     FROM rol_type
                     WHERE rol_type.ID = client_info.RolTypeID
                 ) AS [RolTypeID],
+                (
+                    SELECT [Type]
+                    FROM rol_type
+                    WHERE rol_type.ID = client_info.RolTypeID
+                ) AS [RolType],
                 (
                     SELECT
                         client_contact.ID [ContactID],
